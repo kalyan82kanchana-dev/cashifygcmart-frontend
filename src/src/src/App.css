@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+}
+
+/* Premium brand styling */
+.premium-brand .brand-name {
+  font-weight: 800;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.premium-brand .brand-tagline {
+  font-size: 10px;
+  color: #64748b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Scroll animations */
+.scroll-move {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-move.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero image styling */
+.hero-image {
+  filter: drop-shadow(0 10px 25px rgba(236, 72, 153, 0.2));
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.success-trophy-image {
+  filter: drop-shadow(0 8px 20px rgba(139, 92, 246, 0.3));
+}
+
+.clean-image-wrapper {
+  background: transparent;
+}

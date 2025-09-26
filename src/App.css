@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+/* Premium brand styling */
+.premium-brand .brand-name {
+  font-weight: 800;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.premium-brand .brand-tagline {
+  font-size: 10px;
+  color: #64748b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

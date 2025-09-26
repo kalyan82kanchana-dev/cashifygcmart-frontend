@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Navigation Component
 const Navigation = () => (
   <nav style={{
     backgroundColor: 'white',
@@ -18,94 +17,59 @@ const Navigation = () => (
       alignItems: 'center',
       height: '70px'
     }}>
-      {/* Logo */}
       <div style={{
         fontSize: '24px',
         fontWeight: 'bold',
-        background: 'linear-gradient(135deg, #ec4899, #8b5cf6)',
-        WebkitBackgroundClip: 'text',
-        WebkitTextFillColor: 'transparent',
-        backgroundClip: 'text'
+        color: '#ec4899'
       }}>
         Cashifygcmart
       </div>
       
-      {/* Navigation Menu */}
       <div style={{
         display: 'flex',
         gap: '30px',
         alignItems: 'center'
       }}>
-        <a href="/" style={{
-          color: '#374151',
-          textDecoration: 'none',
-          fontWeight: '500',
-          transition: 'color 0.3s'
-        }}>
-          Home
-        </a>
-        <a href="/getting-started" style={{
-          color: '#374151',
-          textDecoration: 'none',
-          fontWeight: '500'
-        }}>
-          Getting Started
-        </a>
-        <a href="/accepted-cards" style={{
-          color: '#374151',
-          textDecoration: 'none',
-          fontWeight: '500'
-        }}>
-          Accepted Gift Cards
-        </a>
-        <a href="/form-submission" style={{
-          color: '#374151',
-          textDecoration: 'none',
-          fontWeight: '500'
-        }}>
-          Form Submission
-        </a>
-        <a href="/rate-calculator" style={{
-          color: '#374151',
-          textDecoration: 'none',
-          fontWeight: '500'
-        }}>
-          Rate Calculator
-        </a>
-        <a href="/faqs" style={{
-          color: '#374151',
-          textDecoration: 'none',
-          fontWeight: '500'
-        }}>
-          FAQs
-        </a>
+        <a href="/" style={{ color: '#374151', textDecoration: 'none', fontWeight: '500' }}>Home</a>
+        <a href="/getting-started" style={{ color: '#374151', textDecoration: 'none', fontWeight: '500' }}>Getting Started</a>
+        <a href="/accepted-cards" style={{ color: '#374151', textDecoration: 'none', fontWeight: '500' }}>Accepted Gift Cards</a>
+        <a href="/form-submission" style={{ color: '#374151', textDecoration: 'none', fontWeight: '500' }}>Form Submission</a>
+        <a href="/rate-calculator" style={{ color: '#374151', textDecoration: 'none', fontWeight: '500' }}>Rate Calculator</a>
+        <a href="/faqs" style={{ color: '#374151', textDecoration: 'none', fontWeight: '500' }}>FAQs</a>
       </div>
     </div>
   </nav>
 );
 
-// Main App Component
 function App() {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif' }}>
-      {/* Navigation */}
       <Navigation />
       
-      {/* Current Hero Section */}
       <div style={{
         minHeight: 'calc(100vh - 70px)',
-        background: 'linear-gradient(to bottom right, #ec4899, #8b5cf6)',
+        backgroundColor: '#ec4899',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         color: 'white',
-        textAlign: 'center'
+        textAlign: 'center',
+        padding: '20px'
       }}>
         <div>
-          <h1 style={{fontSize: '60px', fontWeight: 'bold', marginBottom: '20px'}}>
+          <h1 style={{
+            fontSize: '60px',
+            fontWeight: 'bold',
+            marginBottom: '20px',
+            color: 'white'
+          }}>
             Cashifygcmart
           </h1>
-          <p style={{fontSize: '24px', marginBottom: '30px'}}>
+          <p style={{
+            fontSize: '24px',
+            marginBottom: '30px',
+            color: 'white'
+          }}>
             Sell Unused Gift Cards for Same-Day Cash Online
           </p>
           <button style={{

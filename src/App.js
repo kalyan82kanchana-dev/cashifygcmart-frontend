@@ -1,7 +1,4 @@
-import React from "react";
-import { CheckCircle, Clock, Shield, Smartphone, Leaf, CreditCard, DollarSign } from "lucide-react";
-
-// Animated Counter Component
+/ Animated Counter Component
 const AnimatedCounter = ({ target, duration = 2000 }) => {
   const [count, setCount] = React.useState(0);
   const [isVisible, setIsVisible] = React.useState(false);

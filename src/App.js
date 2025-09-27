@@ -1,5 +1,6 @@
-import React from "react";
+mport React from "react";
 
+// Animated Counter Component
 const AnimatedCounter = ({ target, duration = 2000 }) => {
   const [count, setCount] = React.useState(0);
   const [isVisible, setIsVisible] = React.useState(false);
@@ -53,108 +54,254 @@ const AnimatedCounter = ({ target, duration = 2000 }) => {
   );
 };
 
-const Navigation = () => (
-  <nav style={{
-    backgroundColor: "white",
-    boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
-    position: "sticky",
-    top: 0,
-    zIndex: 1000
-  }}>
-    <div style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-      padding: "0 20px",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      height: "70px"
-    }}>
-      <div style={{
-        fontSize: "24px",
-        fontWeight: "bold",
-        color: "#ec4899"
-      }}>
-        Cashifygcmart
-      </div>
-      
-      <div style={{
-        display: "flex",
-        gap: "30px",
-        alignItems: "center"
-      }}>
-        <a href="/" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Home</a>
-        <a href="/getting-started" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Getting Started</a>
-        <a href="/accepted-cards" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Accepted Gift Cards</a>
-        <a href="/form-submission" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Form Submission</a>
-        <a href="/rate-calculator" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Rate Calculator</a>
-        <a href="/faqs" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>FAQs</a>
-      </div>
-    </div>
-  </nav>
-);
-
 function App() {
   return (
     <div style={{ fontFamily: "Arial, sans-serif" }}>
-      <Navigation />
-      
-      <div style={{
-        background: "linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #ec4899 100%)",
-        minHeight: "600px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "white",
-        textAlign: "center",
-        padding: "40px 20px"
+      {/* Navigation */}
+      <nav style={{
+        backgroundColor: "white",
+        padding: "20px 0",
+        borderBottom: "1px solid #f1f5f9"
       }}>
-        <div>
-          <h1 style={{
-            fontSize: "60px",
-            fontWeight: "bold",
-            marginBottom: "20px",
-            color: "white"
-          }}>
-            Sell Unused Gift Cards for Same-Day Cash Online
-          </h1>
-          <p style={{
-            fontSize: "24px",
-            marginBottom: "40px",
-            color: "white",
-            opacity: 0.9
-          }}>
-            Turn your unwanted gift cards into instant cash with our secure platform
-          </p>
-          <div style={{ display: "flex", gap: "20px", justifyContent: "center" }}>
-            <button style={{
-              backgroundColor: "white",
-              color: "#ec4899",
-              padding: "15px 30px",
-              border: "none",
-              borderRadius: "8px",
-              fontSize: "18px",
-              fontWeight: "bold",
-              cursor: "pointer"
+        <div style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          padding: "0 20px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center"
+        }}>
+          <div>
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px"
             }}>
-              Get Started
-            </button>
-            <button style={{
-              backgroundColor: "transparent",
-              color: "white",
-              padding: "15px 30px",
-              border: "2px solid white",
-              borderRadius: "8px",
-              fontSize: "18px",
+              <div style={{
+                width: "40px",
+                height: "40px",
+                backgroundColor: "#ec4899",
+                borderRadius: "8px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "white",
+                fontWeight: "bold",
+                fontSize: "20px"
+              }}>
+                C
+              </div>
+              <div>
+                <div style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  color: "#ec4899"
+                }}>
+                  Cashifygcmart
+                </div>
+                <div style={{
+                  fontSize: "10px",
+                  color: "#6b7280",
+                  letterSpacing: "1px",
+                  textTransform: "uppercase"
+                }}>
+                  INSTANT OFFERS, SAME-DAY PAYMENTS
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div style={{
+            display: "flex",
+            gap: "30px",
+            alignItems: "center"
+          }}>
+            <a href="/" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Home</a>
+            <a href="/getting-started" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Getting Started</a>
+            <a href="/accepted-cards" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Accepted Gift Cards</a>
+            <a href="/form-submission" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Form Submission</a>
+            <a href="/rate-calculator" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>Rate Calculator</a>
+            <a href="/faqs" style={{ color: "#374151", textDecoration: "none", fontWeight: "500" }}>FAQs</a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <div style={{
+        backgroundColor: "#f8fafc",
+        padding: "80px 20px"
+      }}>
+        <div style={{
+          maxWidth: "1200px",
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "60px",
+          alignItems: "center"
+        }}>
+          <div>
+            <h1 style={{
+              fontSize: "48px",
               fontWeight: "bold",
-              cursor: "pointer"
+              marginBottom: "20px",
+              color: "#1f2937",
+              lineHeight: "1.2"
             }}>
-              See 100+ Accepted Brands
-            </button>
+              Sell Unused Gift Cards for{" "}
+              <span style={{ color: "#ec4899" }}>Same-Day Cash Online</span>
+            </h1>
+            <p style={{
+              fontSize: "18px",
+              color: "#6b7280",
+              marginBottom: "30px",
+              lineHeight: "1.6"
+            }}>
+              CashifyGCmart is the trusted gift card exchange platform offering instant quotes, competitive rates up to 93%, and secure same-day payments. Turn your unwanted gift cards into cash today.
+            </p>
+            <div style={{ display: "flex", gap: "20px", marginBottom: "40px" }}>
+              <button style={{
+                backgroundColor: "#ec4899",
+                color: "white",
+                padding: "15px 30px",
+                border: "none",
+                borderRadius: "8px",
+                fontSize: "18px",
+                fontWeight: "bold",
+                cursor: "pointer"
+              }}>
+                Start Here
+              </button>
+              <button style={{
+                backgroundColor: "#1f2937",
+                color: "white",
+                padding: "15px 30px",
+                border: "none",
+                borderRadius: "8px",
+                fontSize: "18px",
+                fontWeight: "bold",
+                cursor: "pointer"
+              }}>
+                See 100+ Accepted Brands
+              </button>
+            </div>
+            <div style={{
+              color: "#6b7280",
+              fontSize: "14px",
+              marginBottom: "20px"
+            }}>
+              Trusted by thousands of customers nationwide
+            </div>
+            <div style={{
+              display: "flex",
+              gap: "30px",
+              alignItems: "center"
+            }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{
+                  width: "20px",
+                  height: "20px",
+                  backgroundColor: "#10b981",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "white",
+                  fontSize: "12px"
+                }}>✓</div>
+                <span style={{ fontSize: "14px", color: "#374151" }}>SSL Secured</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{
+                  width: "20px",
+                  height: "20px",
+                  backgroundColor: "#10b981",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "white",
+                  fontSize: "12px"
+                }}>✓</div>
+                <span style={{ fontSize: "14px", color: "#374151" }}>No Hidden Fees</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{
+                  width: "20px",
+                  height: "20px",
+                  backgroundColor: "#10b981",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "white",
+                  fontSize: "12px"
+                }}>✓</div>
+                <span style={{ fontSize: "14px", color: "#374151" }}>Same-Day Payouts</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <div style={{
+                  width: "20px",
+                  height: "20px",
+                  backgroundColor: "#10b981",
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "white",
+                  fontSize: "12px"
+                }}>✓</div>
+                <span style={{ fontSize: "14px", color: "#374151" }}>230+ Vendors</span>
+              </div>
+            </div>
+          </div>
+          
+          <div style={{
+            background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            borderRadius: "20px",
+            padding: "40px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            minHeight: "400px",
+            position: "relative"
+          }}>
+            <div style={{
+              textAlign: "center",
+              color: "white"
+            }}>
+              <div style={{
+                width: "200px",
+                height: "300px",
+                backgroundColor: "white",
+                borderRadius: "20px",
+                margin: "0 auto",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "#374151",
+                fontSize: "14px"
+              }}>
+                <div style={{ marginBottom: "20px", fontWeight: "bold" }}>Payment Receipt</div>
+                <div style={{ fontSize: "32px", fontWeight: "bold", color: "#10b981", marginBottom: "10px" }}></div>
+                <div style={{ fontSize: "12px", color: "#6b7280" }}>Amazon Gift Card</div>
+                <div style={{ fontSize: "12px", color: "#6b7280", marginBottom: "20px" }}>Processing completed</div>
+                <div style={{
+                  backgroundColor: "#10b981",
+                  color: "white",
+                  padding: "8px 20px",
+                  borderRadius: "6px",
+                  fontSize: "12px"
+                }}>
+                  Paid ✓
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      {/* Statistics Section */}
       <div style={{
         backgroundColor: "#f8fafc",
         padding: "80px 20px"
@@ -199,6 +346,7 @@ function App() {
         </div>
       </div>
 
+      {/* Animated Counter Section */}
       <div style={{
         backgroundColor: "#ec4899",
         padding: "60px 20px",
@@ -221,6 +369,7 @@ function App() {
         </div>
       </div>
 
+      {/* Testimonials Section */}
       <div style={{
         backgroundColor: "white",
         padding: "80px 20px"
@@ -250,7 +399,7 @@ function App() {
               textAlign: "left"
             }}>
               <div style={{ color: "#6b7280", marginBottom: "20px", fontSize: "16px" }}>
-                Fast and reliable service. Got my payment within hours!
+                "Fast and reliable service. Got my payment within hours!"
               </div>
               <div style={{ fontWeight: "bold", color: "#374151" }}>
                 Jordan K., Chicago
@@ -263,7 +412,7 @@ function App() {
               textAlign: "left"
             }}>
               <div style={{ color: "#6b7280", marginBottom: "20px", fontSize: "16px" }}>
-                Great rates and excellent customer support. Highly recommended!
+                "Great rates and excellent customer support. Highly recommended!"
               </div>
               <div style={{ fontWeight: "bold", color: "#374151" }}>
                 Samantha W., Boston
@@ -276,7 +425,7 @@ function App() {
               textAlign: "left"
             }}>
               <div style={{ color: "#6b7280", marginBottom: "20px", fontSize: "16px" }}>
-                Simple process, fair prices. Will definitely use again.
+                "Simple process, fair prices. Will definitely use again."
               </div>
               <div style={{ fontWeight: "bold", color: "#374151" }}>
                 Cameron P., Denver
@@ -286,6 +435,7 @@ function App() {
         </div>
       </div>
 
+      {/* Footer */}
       <footer style={{
         backgroundColor: "#1f2937",
         color: "white",
